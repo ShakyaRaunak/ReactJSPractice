@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Test React</title>
+
+<!-- Load React API -->
+<script src="assets/reactjs/react.js"></script>
+<!-- Load React DOM-->
+<script src="assets/reactjs/react-dom.js"></script>
+<!-- Load Babel Compiler -->
+<script src="assets/reactjs/babel.js"></script>
+
+<body>
+
+<div id="root"></div>
+
+<div id="root2"></div>
+
+<script type="text/babel">
+    // Example 1
+    function Welcome(props) {
+        return <h1>Hello {props.name}!</h1>;
+    }
+
+    ReactDOM.render(<Welcome name="John Doe"/>, document.getElementById('root'));
+
+    // Example 2
+    class Welcome2 extends React.Component {
+        render() {
+            return (<h1>Hello {this.props.name}</h1>);
+        }
+    }
+
+    ReactDOM.render(<Welcome name="John Doe 2"/>, document.getElementById('root2'));
+</script>
+
+</body>
+</html>
