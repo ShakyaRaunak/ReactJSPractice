@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Test React</title>
+
+<!-- Load React API -->
+<script src="assets/reactjs/react.js"></script>
+<!-- Load React DOM-->
+<script src="assets/reactjs/react-dom.js"></script>
+<!-- Load Babel Compiler -->
+<script src="assets/reactjs/babel.js"></script>
+
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+    function tick() {
+        const element = (<h1>{new Date().toLocaleTimeString()}</h1>);
+        ReactDOM.render(element, document.getElementById('root'));
+    }
+
+    setInterval(tick, 1000);
+</script>
+
+</body>
+</html>
