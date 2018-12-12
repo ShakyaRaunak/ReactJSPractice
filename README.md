@@ -1,10 +1,9 @@
 #### React Quickstart Tutorial
 
-The method ReactDom.render() is used to render (display) HTML elements.
-
-React elements are immutable. They cannot be changed.
-
-The only way to change a React element is to render a new element every time.
+- The method ReactDom.render() is used to render (display) HTML elements.
+- React elements are immutable. They cannot be changed.
+- The only way to change a React element is to render a new element every time.
+- React components are JavaScript functions.
 
 #### What is Babel?
 
